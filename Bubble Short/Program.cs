@@ -42,7 +42,19 @@ namespace Bubble_Short
                 a[i] = Int32.Parse(s1);
             }
         }
-
+        public void display()
+        {
+            //menampilkan array yang tersusun
+            Console.WriteLine("");
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine(" Element array yang telah tersusun ");
+            Console.WriteLine("-----------------------------------");
+            for (int j = 0; j < n; j++)
+            {
+                Console.WriteLine(a[j]);
+            }
+            Console.WriteLine("");
+        }
 
             static void Main(string[] args)
         {
