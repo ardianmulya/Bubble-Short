@@ -3,12 +3,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Bubble_Short
 {
-    internal class Program
+    class Program
     {
-        static void Main(string[] args)
+        //Deklarasi array int dengan ukuran 20
+        private int[] a = new int[20];
+
+        //deklarasi variabel int untuk menyimpan banyaknya data pada array
+        private int n;
+
+        //fungsi / method untuk menerima masukan
+        public void read()
+        {
+            //menerima angka untuk menentukan banyaknya data yang disimpan pada array 
+            while (true)
+            {
+                Console.Write("Masukkan banyaknya elemen pada Array:");
+                string s = Console.ReadLine();
+                n = Int32.Parse(s);
+                if (n <= 20)
+                    break;
+                else
+                    Console.WriteLine("\nArray dapat mempunyai maksimal 20 e1emen.\n");
+            }
+
+        }
+
+
+            static void Main(string[] args)
         {
         }
     }
